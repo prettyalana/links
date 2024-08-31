@@ -9,10 +9,19 @@ body {
   justify-content: center;
 }
 
-.items {
+.bio,
+h1 {
+  text-align: center;
+}
+
+.projects {
   display: flex;
   flex-direction: column;
   gap: 30px;
+  margin-bottom: 50px;
+}
+
+.items {
   max-width: 600px;
   flex-grow: 1;
 }
@@ -27,6 +36,86 @@ body {
 .banner {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
+}
+
+.hobbies {
+  margin: 80px 0 80px;
+  text-align: center;
+}
+
+.carousel-cell {
+  height: 200px;
+  width: 200px;
+}
+
+.carousel-cell img {
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+}
+
+.carousel-cell {
+  width: 70%;
+  height: 250px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  align-items: center;
+  font-weight: 900;
+}
+
+.carousel-cell img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  opacity: 0.7;
+  -webkit-transform: scale(0.85);
+  transform: scale(0.85);
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s, transform 0.3s,
+    -webkit-filter 0.3s, filter 0.3s;
+  transition: opacity 0.3s, transform 0.3s, filter 0.3s;
+}
+
+.carousel-cell.is-selected img {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-filter: none;
+  filter: none;
+}
+
+.flickity-prev-next-button {
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  opacity: 0.6;
+}
+.flickity-prev-next-button:hover {
+  background: transparent;
+  opacity: 1;
+}
+.flickity-prev-next-button .arrow {
+  fill: white;
+}
+.flickity-prev-next-button.no-svg {
+  color: white;
+}
+.flickity-prev-next-button.previous {
+  left: 0;
+}
+.flickity-prev-next-button.next {
+  right: 0;
+}
+.flickity-prev-next-button:disabled {
+  display: none;
 }
 
 .thumbnail {
@@ -58,15 +147,37 @@ body {
 .name {
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .social-icons {
   display: flex;
   justify-content: space-around;
   padding: 8px;
+  margin-bottom: 20px;
 }
 
 .social-icons a {
   color: black;
   text-decoration: none;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 900;
+  background: rgb(249, 156, 198);
+  opacity: 0.5;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+}
+
+@media (max-width: 450px) {
+  footer {
+    font-size: 0.5em;
+  }
 }

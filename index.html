@@ -4,43 +4,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My link in bio</title>
+  <title>My Link in Bio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <script src="https://kit.fontawesome.com/ab9c75fe83.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </head>
 
 <body>
   <div class="items">
-    <div class="banner">
+    <h1>Link in Bio</h1>
+    <section class="banner">
       <img src="images/YouTube banner2 copy.jpg" alt="image of my name in pink clouds" class="banner-image">
-    </div>
-    <div class="name">Alana Edwards</div>
-    <div class="social-icons">
-      <a target="_blank" href="https://github.com/prettyalana"><i class="fa-brands fa-github"></i></a>
-      <a target="_blank" href="https://dev.to/prettyalana"><i class="fa-brands fa-dev"></i></a>
-      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="#"><i class="fa-brands fa-discord"></i></a>
-    </div>
-    <div class="link">
-      <img class="thumbnail"
-        src="https://images.unsplash.com/photo-1523992038393-d5ab874a077e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
-      <a target="_blank" href="https://muse-shopping.com">Muse</a>
-    </div>
-    <div class="link">
-      <img class="thumbnail"
-        src="https://images.unsplash.com/photo-1654064756620-52e48f37099f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1490&q=80">
-      <a target="_blank" href="https://homelessresourceindex.onrender.com">Homeless Resource Index</a>
-    </div>
-    <div class="link">
-      <img class="thumbnail" src="images/wepik-export-202311080415004Ux1.png">
-      <a target="_blank" href="https://github.com/prettyalana/mini-guessing-game-cli">Guessing Game CLI</a>
-    </div>
-    <div class="link">
-      <img class="thumbnail"
-        src="https://images.pexels.com/photos/14976528/pexels-photo-14976528/free-photo-of-white-and-pink-meringues.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
-      <a target="_blank" href="https://prettyalana.github.io/La-Bella-Patisserie/">La Bella Patisserie</a>
-    </div>
+    </section>
+    <section class="bio">
+      <h2 class="name">Alana Edwards</h2>
+      <p>I'm a passionate full stack developer</p>
+    </section>
+    <section class="contact">
+      <div class="social-icons">
+        <a target="_blank" href="https://github.com/prettyalana"><i class="fa-brands fa-github"></i></a>
+        <a target="_blank" href="https://dev.to/prettyalana"><i class="fa-brands fa-dev"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-discord"></i></a>
+      </div>
+    </section>
+    <section class="hobbies">
+      <h3>My Hobbies</h3>
+      <div class="main-gallery js-flickity"
+      data-flickity-options='{ "cellAlign": "left", "contain": true }'>
+        <div class="carousel-cell">
+          <img
+            src="https://images.pexels.com/photos/4792079/pexels-photo-4792079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="Pink yarn"
+          />
+          <div class="card-text">
+            Crocheting
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="https://images.unsplash.com/photo-1562232573-0305012a8818?q=80&w=3024&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="aesthetic photo of an open book with a rose on top"
+          />
+          <div class="card-text">
+            Reading
+          </div>
+        </div>
+        <div class="carousel-cell">
+          <img
+            src="https://images.pexels.com/photos/5187650/pexels-photo-5187650.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt="French net bag on a pink background"
+          />
+          <div class="card-text">
+            Shopping
+          </div>
+        </div>
+    </section>
+    <section class="projects">
+      <div class="link">
+        <img class="thumbnail"
+          src="https://images.unsplash.com/photo-1523992038393-d5ab874a077e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80">
+        <a target="_blank" href="https://muse-shopping.com">Muse</a>
+      </div>
+      <div class="link">
+        <img class="thumbnail"
+          src="https://images.unsplash.com/photo-1654064756620-52e48f37099f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1490&q=80">
+        <a target="_blank" href="https://homelessresourceindex.onrender.com">Homeless Resource Index</a>
+      </div>
+      <div class="link">
+        <img class="thumbnail" src="images/wepik-export-202311080415004Ux1.png">
+        <a target="_blank" href="https://prettyalana.github.io/javascript-rps/">Rock Paper Scissors</a>
+      </div>
+      <div class="link">
+        <img class="thumbnail"
+          src="https://images.pexels.com/photos/14976528/pexels-photo-14976528/free-photo-of-white-and-pink-meringues.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2">
+        <a target="_blank" href="https://prettyalana.github.io/La-Bella-Patisserie/">La Bella Patisserie</a>
+      </div>
+    </section>
   </div>
+  <footer>
+    Alana Edwards | All rights reserved | Link in Bio 2024
+  </footer>
 </body>
 
 </html>
