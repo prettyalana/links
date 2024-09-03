@@ -33,6 +33,13 @@ h1 {
   width: 95%;
 }
 
+@media (min-width: 600px ) {
+  .items {
+    max-width: 600px;
+    flex-grow: 1;
+  }
+}
+
 .banner-image {
   width: 12.5rem;
   height: 12.5rem;
